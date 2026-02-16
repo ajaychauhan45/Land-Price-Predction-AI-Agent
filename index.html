@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%234361ee'/><text x='50%' y='54%' text-anchor='middle' font-family='Arial' font-size='36' fill='white'>P</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI-powered real estate market analysis, property predictions, and investment insights across India. Get accurate property valuations with Propridict AI." />
+    <title>Propridict AI - Professional Real Estate Market Intelligence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+       /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: #4361ee; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #3f37c9; }
+      
+      /* Leaflet z-index fix */
+      .leaflet-pane { z-index: 0 !important; }
+      .leaflet-top, .leaflet-bottom { z-index: 1 !important; }
+
+      /* Animation for Chatbot */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float { animation: float 3s ease-in-out infinite; }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
